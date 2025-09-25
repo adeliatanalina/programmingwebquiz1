@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hometown · Quiz1 Site</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="../">Web Programming Project</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="../profile/">Profile</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./">Hometown</a></li>
+          <li class="nav-item"><a class="nav-link" href="../food/">Local Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="../tourist/">Tourist Places</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hometown-hero text-white">
+    <div class="container py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <h1 class="display-6 fw-bold mb-2">Surabaya — City of Heroes</h1>
+          <p class="lead mb-3">
+            I live and grew up in Surabaya. Surabaya is Indonesia’s second-largest city and the energetic capital of East Java.
+            It’s known as <em>Kota Pahlawan</em> (City of Heroes) for the spirit shown in the
+            <strong>10 November 1945</strong> Battle of Surabaya, honored by the Tugu Pahlawan monument.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-light text-dark"><i class="bi bi-building me-1"></i>Modern & Historic</span>
+            <span class="badge bg-light text-dark"><i class="bi bi-truck me-1"></i>Major Port & Trade Hub</span>
+            <span class="badge bg-light text-dark"><i class="bi bi-egg-fried me-1"></i>Legendary Street Food</span>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow border-0 lift">
+            <!-- Hero card photo: Surabaya statue -->
+            <img src="../assets/img/surabaya.jpeg" class="card-img-top" alt="Surabaya Statue (Sura & Baya)">
+            <div class="card-body">
+              <h5 class="card-title mb-1">Sura & Baya Statue</h5>
+              <p class="text-muted mb-0 small">The city’s emblem: shark (<em>Sura</em>) and crocodile (<em>Baya</em>).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,32 C240,96 480,0 720,32 C960,64 1200,96 1440,32 L1440,80 L0,80 Z"></path>
+    </svg>
+  </section>
+
+  <!-- Main -->
+  <main class="container my-5">
+
+    <!-- Overview -->
+    <div class="row g-4 mb-4">
+      <div class="col-lg-7">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title mb-3">About Surabaya</h5>
+            <p>
+                Surabaya is the capital of East Java and one of the busiest cities in Indonesia. 
+                People call it the <strong>“City of Heroes”</strong> because of the Battle of 10 November 1945, when the locals fought hard for independence. 
+                You can still feel that spirit at places like Tugu Pahlawan and around the old city areas.
+            </p>
+            <p>
+                The city is a mix of modern malls, offices, and old neighborhoods. You’ll hear Suroboyoan (the local dialect), see the shark and crocodile symbol (Sura and Baya), 
+                and find food everywhere: rawon, lontong balap, tahu tek, and rujak cingur are some favorites. It’s hot most of the time, but evenings are fun with street food, 
+                coffee shops, and lights on streets like Tunjungan. Surabaya is also an important port city (Tanjung Perak), so it’s busy with trade, industry, and students from many campuses.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fun facts -->
+      <div class="col-lg-5">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Fun Facts</h5>
+            <ul class="list-unstyled small mb-0">
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Nickname: <strong>Kota Pahlawan</strong>—City of Heroes.</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Emblem: shark (<em>Sura</em>) & crocodile (<em>Baya</em>).</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Landmarks: Tugu Pahlawan, Sura-Baya Statue, Tunjungan area.</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Green escapes: Mangrove boardwalks and river promenades.</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Major hub for education, industry, and shipping.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map + Majapahit Story -->
+    <div class="row g-4 align-items-stretch">
+      <!-- Map -->
+      <div class="col-lg-7">
+        <div class="ratio ratio-16x9 shadow-sm rounded overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps?q=Surabaya%2C%20Indonesia&output=embed"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- Hotel Majapahit Lore -->
+      <div class="col-lg-5">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title mb-3">Hotel Majapahit: Then & Now</h5>
+            <p class="small text-muted">
+              Formerly the Oranje/Hotel Yamato, this is where youths tore the Dutch flag’s blue stripe on
+              <strong>19 September 1945</strong>, leaving red–white flying. The act of defiance—known as
+              the “Flag Incident”—helped ignite the Battle of Surabaya and the city’s heroic identity.
+            </p>
+
+            <div class="row g-2">
+              <div class="col-6">
+                <figure class="majapahit-photo card border-0 shadow-sm overflow-hidden">
+                  <img src="../assets/img/HotelMajapahitThen.jpg" class="img-fluid" alt="Hotel Majapahit in the past">
+                  <figcaption class="photo-note">Then</figcaption>
+                </figure>
+              </div>
+              <div class="col-6">
+                <figure class="majapahit-photo card border-0 shadow-sm overflow-hidden">
+                  <img src="../assets/img/HotelMajapahitNow.jpg" class="img-fluid" alt="Hotel Majapahit today">
+                  <figcaption class="photo-note">Now</figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <p class="small mt-2 mb-0">
+              Today, Hotel Majapahit is a beautifully preserved heritage hotel—quiet gardens, colonial
+              architecture, and a living reminder of Surabaya’s courage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="mt-auto py-4 bg-light border-top">
+    <div class="container-fluid px-4 small text-muted text-center">
+      © 2025 Adelia Tanalina Yumna · Quiz 1 – Web Programming Course (IUP)
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

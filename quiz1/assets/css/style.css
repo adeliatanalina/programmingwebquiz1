@@ -1,0 +1,111 @@
+
+:root {
+    --bs-primary: #A38068;
+    --bs-primary-rgb: 163, 128, 104;
+  }
+  
+
+body { scroll-behavior: smooth; }
+header .lead { max-width: 50rem; }
+.card-title { font-weight: 600; }
+footer { font-size: .9rem; }
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+/* hero gradient + wave */
+.hero{
+    background: linear-gradient(135deg, var(--bs-primary), #8b5e34);
+    color:#fff;
+    position: relative;
+  }
+  .hero .btn-outline-light{ border-width:2px; }
+  .wave{
+    display:block;
+    width:100%;
+    height:80px;
+    color:#f8f9fa;      /* matches page background */
+  }
+  .wave path{ fill: currentColor; }
+  
+  /* card hover lift */
+  .lift{ transition: transform .2s ease, box-shadow .2s ease; }
+  .lift:hover{ transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); }
+  
+  /* profile hero styling (reuses your brand color) */
+.profile-hero{
+    background: linear-gradient(135deg, var(--bs-primary), #8b5e34);
+    color:#fff;
+    position: relative;
+  }
+  .profile-hero .badge{ font-weight: 500; }
+  .avatar{ width: 180px; height: 180px; object-fit: cover; }
+  
+  /* decorative wave (used on homepage) */
+  .wave{ display:block; width:100%; height:80px; color:#f8f9fa; }
+  .wave path{ fill: currentColor; }
+  
+  /* simple vertical timeline */
+  .timeline{ margin: 0; padding: 0; position: relative; }
+  .timeline::before{
+    content:""; position:absolute; left:10px; top:0; bottom:0;
+    width:2px; background: rgba(0,0,0,.1);
+  }
+  .timeline-item{
+    position: relative; display: grid; grid-template-columns: 24px 1fr; gap: .75rem; padding: .25rem 0 .75rem;
+  }
+  .timeline-dot{
+    width:12px; height:12px; border-radius:50%; margin: .25rem auto 0;
+  }
+  
+/* hero */
+.hometown-hero{
+    background: linear-gradient(135deg, var(--bs-primary), #8b5e34);
+    color:#fff;
+    position: relative;
+  }
+  .hometown-hero .card img{ height: 220px; object-fit: cover; object-position: center; }
+  .wave{ display:block; width:100%; height:80px; color:#f8f9fa; }
+  .wave path{ fill: currentColor; }
+  
+  /* image captions */
+  .photo-note{
+    position: absolute; left:0; right:0; bottom:0;
+    padding:.45rem .6rem;
+    background: linear-gradient(to top, rgba(0,0,0,.45), rgba(0,0,0,0));
+    color:#fff; font-size:.9rem;
+  }
+  
+  /* majapahit side-by-side images */
+  .majapahit-photo img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* hover lift effect (optional, used on some cards) */
+  .lift{ transition: transform .2s ease, box-shadow .2s ease; }
+  .lift:hover{ transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); }
+  
+/* book tiles — portrait sizing similar to your examples */
+.book-shelf .book-cover{
+    width: 100%;
+    aspect-ratio: 3 / 4;      /* keeps a tall, book-like ratio */
+    object-fit: cover;         /* fills the frame cleanly */
+    object-position: center;
+    border-radius: .5rem;
+  }
+  
+  .book-title{ font-weight: 600; line-height: 1.2; }
+  .book-tile{ transition: transform .2s ease, box-shadow .2s ease; }
+  .book-tile:hover{ transform: translateY(-3px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); }
+  
+  /* optional: tighten grid on large screens */
+  @media (min-width: 992px){
+    .book-shelf .col-lg-3{ max-width: 22%; flex: 0 0 22%; } /* 4–5 across feel */
+  }
+  
